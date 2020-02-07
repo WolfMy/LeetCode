@@ -5,6 +5,7 @@
 #
 
 # @lc code=start
+'''
 # [1] 复制+遍历 --> 通过	1164 ms	14.8 MB
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
@@ -13,6 +14,7 @@ class Solution:
             if nums_copy[i] == nums_copy[i-1]:
                 nums.remove(nums_copy[i])
         return len(nums)
+'''
 
 # [2] 快慢指针 --> 通过	148 ms	14.9 MB
 class Solution:
