@@ -5,6 +5,7 @@
 #
 
 # @lc code=start
+'''
 # [1] 动态规划（自顶向下，记忆化） --> 通过	36 ms	13 MB
 class Solution:
     def climbStairs(self, n: int) -> int:
@@ -23,7 +24,7 @@ class Solution:
             # 如果cache中没有缓存n，那么递归计算climb(n)后，添加到缓存中，再返回
             self.cache[n] = self.climb(n-1) + self.climb(n-2)
             return self.cache[n]
-
+'''
 # [2] 动态规划（自底向上） --> 通过	24 ms	12.9 MB
 class Solution:
     def climbStairs(self, n: int) -> int:
