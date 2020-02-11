@@ -80,6 +80,26 @@ class Solution:
                 j += 1
             max_len = max(max_len, len(s[i:j]))
         return max_len
+# [4] 滑动窗口+哈希表 --> 92 ms	13.2 MB
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        n = len(s)
+        if n <= 1: 
+            return n
+        # 滑动窗口：窗口内的无重复字符
+        # 哈希表记录字符索引
+        hasmap = {}
+        # 双指针，指向滑窗左右边界
+        i = 0
+        j = 0
+        max_len = 0
+        for j in range(n):
+            if s[j] in hasmap:
+                i = max(i, hasmap[s[j]]+1)
+            hasmap[s[j]] = j
+            max_len = max(max_len, j-i+1)
+        return max_len
 '''
+
 # @lc code=end
 
