@@ -44,8 +44,8 @@ class Solution:
             p = p.right
         return res
 
-# [3] 莫里斯遍历 --> 40 ms	13 MB
 '''
+# [3] 莫里斯遍历 --> 40 ms	13 MB
 线索二叉树: https://baike.baidu.com/item/%E7%BA%BF%E7%B4%A2%E4%BA%8C%E5%8F%89%E6%A0%91/10810037?fr=aladdin
 莫里斯方法解析: https://stackoverflow.com/questions/5502916/explain-morris-inorder-tree-traversal-without-using-stacks-or-recursion
 思路：
