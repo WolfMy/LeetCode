@@ -17,7 +17,7 @@ class Solution:
         for i in range(1, n):
             diff.append(prices[i] - prices[i-1])
 
-        if len(diff) <= 1:
+        if len(diff) == 1:
             return max(0, diff[0])
 
         max_Profit = diff[0]
