@@ -1,6 +1,6 @@
 # LeetCode
 
- 记录LeetCode刷题情况
+ LeetCode刷题打卡
 
 **2020.02.04**	回溯算法
 
